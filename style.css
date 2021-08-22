@@ -1,0 +1,182 @@
+
+/* == Navbar CSS ==  */
+#navbar{
+    /* height: 13vh; */
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    /* margin-right: 1rem; */
+    font-size: 1.25rem;.
+    line-height: inherit;
+    white-space: nowrap;
+    width: 200px;
+  
+}
+
+
+@media only screen and (max-width: 1070px) {
+
+    #nav_contents{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .logo {
+      /* background-color: lightblue; */
+      width: 140px;
+      margin-right: 120px;
+      /* margin-right: 50px; */
+    }
+
+    #search_bar{  
+    margin-left: 0px;
+    /* background-color: yellow; */
+    align-self: flex-end;
+}
+  }
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 90px;
+        margin-right: 120px;
+        height: 50px;
+    }
+
+    #navbar{
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 605px ){
+
+    .logo{
+        width: 50px;
+        margin-right: 100px;
+    }
+
+    #search_bar{
+        width: 400px;
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 500px){
+    #search_bar{
+        width: 400px;
+        margin-left: 400px;
+    }
+}
+
+#nav_contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#search_bar{
+    /* background-color: yellow; */
+    margin-left: -100px;
+    width: 40vw;
+   
+}
+
+#search_btn{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:rgba(76, 0, 252, 0.809);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+/* == Page Container CSS ==  */
+
+#container{
+margin: 0px;
+padding: 0px;
+overflow-y: scroll;
+}
+#containe::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+/* == Menu Items CSS == */
+
+  #menu_items{
+    background-color: rgba(76, 0, 252, 0.809);
+    height: 90vh;
+   
+}
+
+@media only screen and (max-width:1100px)  {
+
+    #page-containe{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu_items{
+       /* width: 260px; */
+    
+       
+    }
+    
+}
+
+  .dashboard-p{
+    margin-top: 80px;
+    padding-left: 9px;
+    color: white;
+  }
+
+  #menu_dropdown{
+      display: block;
+      margin-left: -20px;
+    
+  }
+
+  #menu_dropdown li{
+      list-style: none;
+      color: white;
+  }
+  #menu_dropdown li a{
+      color: rgba(255, 255, 255, 0.761);
+      font-size: 1rem;
+      
+  }
+
+
+  /* = Page-contebt Section CSS = */
+
+#page_contents{
+    /* display: block; */
+}
+
+#page-heading{
+    margin-top: 90px;
+}
+
+.email-input_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+#input_email{
+    width: 300px;
+}
+
