@@ -1,85 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship_tsk</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship_tsk</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/95f27dd070.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light " id="navbar">
-    <div id="nav_contents">  
-        <div class="container-fluid" id="container-fluid">
-          <a class="navbar-brand"><img class="logo" src="/logoXemail.png" alt=""></a>
-        </div>
 
-        <form class="d-flex my-2" id="search_bar">
-            <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
-            <button id="search_btn" type="submit"><i class="fa fa-search"></i></button>
-          </form>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light " id="navbar">
+    <div id="nav_contents">
+      <div class="container-fluid" id="container-fluid">
+        <a class="navbar-brand"><img class="logo" src="/logoXemail.png" alt=""></a>
       </div>
-    </nav>
 
+      <form class="d-flex my-2" id="search_bar">
+        <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+        <button id="search_btn" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <!-- 
+        <div class="user-profile_img">
+          <img class="user-profile_img" src="/profile.jpg" alt="Avatar" style="width:200px">
+        </div>  -->
 
-    <div  id="container">
-         <!-- <div class="row">
+    </div>
+  </nav>
+
+  <div id="container">
+    <!-- <div class="row">
           <div class="col">col</div>
           <div class="col">col</div>
           <div class="col">col</div>
           <div class="col">col</div>
         </div>  -->
-        <div id="page-container" class="row">
-          <div id="menu_items" class="col-2 m-0">
-              <p class="dashboard-p">Dashboard</p>
-              <hr>
-            <ul id="menu_dropdown">
-                <!-- <P>@ EMAIL VERIFICATION</P> -->
-                <li> @ EMAIL VERIFICATION</li>
-                <li><a class="dropdown-item" href="#">Single email verification</a></li>
-                <li><a class="dropdown-item" href="#">Bulk email verification</a></li>
-                <li><a class="dropdown-item" href="#">Download verified result</a></li>
-                <li><a class="dropdown-item" href="#">Email verification API</a></li>
-              </ul>
-                <hr>
-            <ul id="menu_dropdown">
-                <!-- <P>@ EMAIL VERIFICATION</P> -->
-                <li> @ INTEGRATION</li>
-                <li><a class="dropdown-item" href="#">My Apps</a></li>
-                <li><a class="dropdown-item" href="#">Email Tools</a></li>
-              </ul>
-                 <hr>
-            <ul id="menu_dropdown">
-                <!-- <P>@ EMAIL VERIFICATION</P> -->
-                <li> @ BILLING</li>
-                <li><a class="dropdown-item" href="#">Manage plan</a></li>
-                <li><a class="dropdown-item" href="#">Invoices</a></li>
-                <li><a class="dropdown-item" href="#">Buy credits</a></li>
-              </ul>
-          </div>
+    <div id="page-container" class="row">
+      <aside id="menu_items" class=" m-0">
+        <p class="dashboard-p"> <span><i class="fas fa-tachometer-alt"></i></span> Dashboard</p>
+        <hr>
+        <ul id="menu_dropdown">
+          <!-- <P>@ EMAIL VERIFICATION</P> -->
+          <li> @ EMAIL VERIFICATION</li>
+          <li><a class="dropdown-item" href="#"> <span><i class="fas fa-user-alt"></i></span> Single email
+              verification</a></li>
+          <li><a class="dropdown-item" href="#"> <span><i class="far fa-envelope"></i></span> Bulk email
+              verification</a></li>
+          <li><a class="dropdown-item" href="#"> <span><i class="fas fa-file-download"></i></span> Download verified
+              result</a></li>
+          <li><a class="dropdown-item" href="#"> <span><i class="fas fa-plug"></i></span> Email verification API</a>
+          </li>
+        </ul>
+        <hr>
+        <ul id="menu_dropdown">
+          <!-- <P>@ EMAIL VERIFICATION</P> -->
+          <li> <span><i class="fas fa-hand-holding-usd"></i></span> INTEGRATION</li>
+          <li><a class="dropdown-item" href="#"><span><i class="fas fa-bars"></i></span> My Apps</a></li>
+          <li><a class="dropdown-item" href="#"><samp><i class="fas fa-book"></i></samp> Email Tools</a></li>
+        </ul>
+        <hr>
+        <ul id="menu_dropdown">
+          <!-- <P>@ EMAIL VERIFICATION</P> -->
+          <li> <span><i class="fas fa-hand-holding-usd"></i></span> BILLING</li>
+          <li><a class="dropdown-item" href="#"><span><i class="fas fa-globe"></i></span> Manage plan</a></li>
+          <li><a class="dropdown-item" href="#"><span><samp><i class="fas fa-book"></i></samp></span> Invoices</a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fas fa-credit-card"></i> </span> Buy credits</a></li>
+        </ul>
+      </aside>
 
-          <div id="page_contents" class="col-10 m-0 bg-light">
-              <h3 id="page-heading">Single email verification</h3> 
-              <section class="email-input_form">
-                  <h5>Enter your email id below and check the results!</h5>
-                  <form class="row g-3">
- 
-                    <div class="col-auto">
-                      <label for="inputPassword2" class="visually-hidden">Password</label>
-                      <input type="email" class="form-control" id="input_email" placeholder="Enter Email...">     
-                          
-                    </div>
-                    <div class="col-auto">
-                      <button type="submit" class="btn btn-primary mb-3">Verify</button>
-                    </div>
-                  </form>
-              </section>
+      <section id="page_contents" class=" m-0 bg-light">
+        <h3 id="page-heading">Single email verification</h3>
+        <section class="email-input_form">
+          <h5>Enter your email id below and check the results!</h5>
+
+          <form class="input-section row g-3">
+            <div class="col-auto">
+              <label for="inputPassword2" class="visually-hidden">Password</label>
+              <input type="email" class="form-control" id="input_email" placeholder="Enter Email...">
+
             </div>
-        </div>
-      </div>
+            <div class="col-auto">
+              <button id="bg-color" type="submit" class="btn mb-3">Verify</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

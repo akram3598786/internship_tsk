@@ -1,5 +1,5 @@
-
 /* == Navbar CSS ==  */
+
 #navbar{
     /* height: 13vh; */
     align-items: center;
@@ -9,78 +9,25 @@
 .logo {
     display: inline-block;
     padding-top: .3125rem;
-    padding-bottom: .3125rem;
+    /* padding-bottom: .312rem; */
     /* margin-right: 1rem; */
-    font-size: 1.25rem;.
+    font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
     width: 200px;
-  
 }
 
-
-@media only screen and (max-width: 1070px) {
-
-    #nav_contents{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .logo {
-      /* background-color: lightblue; */
-      width: 140px;
-      margin-right: 120px;
-      /* margin-right: 50px; */
-    }
-
-    #search_bar{  
-    margin-left: 0px;
-    /* background-color: yellow; */
-    align-self: flex-end;
-}
-  }
-
-@media only screen and (max-width: 768px){
-    .logo{
-        width: 90px;
-        margin-right: 120px;
-        height: 50px;
-    }
-
-    #navbar{
-        height: 70px;
-    }
-}
-@media only screen and (max-width: 605px ){
-
-    .logo{
-        width: 50px;
-        margin-right: 100px;
-    }
-
-    #search_bar{
-        width: 400px;
-        margin-left: 200px;
-    }
-}
-@media only screen and (max-width: 500px){
-    #search_bar{
-        width: 400px;
-        margin-left: 400px;
-    }
-}
-
+    
 #nav_contents{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 #search_bar{
-    /* background-color: yellow; */
     margin-left: -100px;
-    width: 40vw;
-   
+    width: 40vw;  
 }
 
 #search_btn{
@@ -94,6 +41,50 @@
     border-left: none;
     cursor: pointer;
   }
+
+  /* .user-profile_img{
+      margin-top: -5px;
+   border: 2px solid red;
+   height: 80px;
+    width: 50px; 
+    border-radius: 50%; 
+    background-image: url(/profile.jpg);  
+    position: relative;
+    right: 0;
+    left: 450px;
+    background-color: aqua;
+  } */
+
+ @media only screen and (max-width: 1070px) {
+
+    #navbar{
+     display: inline;;
+    }
+
+    .logo {
+      margin-right: 90px;
+    }
+  }
+
+@media only screen and (max-width: 350px){
+
+    .logo{
+        display: block;
+        margin: auto;
+    }
+
+    #search_bar{
+        display: block;
+        margin: auto;
+    }
+    
+#nav_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
 
 /* == Page Container CSS ==  */
 
@@ -113,32 +104,23 @@ overflow-y: scroll;
 
 /* == Menu Items CSS == */
 
-  #menu_items{
-    background-color: rgba(76, 0, 252, 0.809);
-    height: 90vh;
-   
+#page-container{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    /* grid-template-areas: 
+    'aside aside aside aside'
+    'secton section section section' 
+  ; */
+
 }
 
-@media only screen and (max-width:1100px)  {
-
-    #page-containe{
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #menu_items{
-       /* width: 260px; */
-    
-       
-    }
-    
+  #menu_items{
+    background-color: rgba(76, 0, 252, 0.809);
 }
 
   .dashboard-p{
-    margin-top: 80px;
-    padding-left: 9px;
+    padding-top: 90px;
+    padding-left: 12px;     
     color: white;
   }
 
@@ -155,28 +137,87 @@ overflow-y: scroll;
   #menu_dropdown li a{
       color: rgba(255, 255, 255, 0.761);
       font-size: 1rem;
-      
+      padding-right: 3px; 
   }
+
+  #menu_dropdown li a:hover{
+      color: black;
+  }
+
+  @media only screen and (max-width:1100px)  {
+
+    #page-container{
+   
+       display: inline;
+       text-align: center;  
+    }
+    #menu_dropdown li {   
+        font-size: 1.5rem; 
+    }
+    #menu_dropdown li a{   
+        font-size: 1.5rem; 
+    }
+  
+    }
 
 
   /* = Page-contebt Section CSS = */
 
-#page_contents{
-    /* display: block; */
-}
 
 #page-heading{
     margin-top: 90px;
 }
 
 .email-input_form{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 90px;
-}
-#input_email{
-    width: 300px;
+    
 }
 
+
+#input_email{
+    width: 300px;
+    
+}
+@media only screen and (max-width:1100px){
+    #page-heading{
+        margin-top: 40px;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email-input_form{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 370px){
+    .dashboard-p{
+        padding-top: 150px;     
+       
+      }
+      #menu_dropdown li{
+       text-align: left;
+       font-size: 1rem;
+    }
+    #menu_dropdown li a{
+        text-align: left;
+        font-size: 1rem;
+     }
+    }
+
+#bg-color{
+    background-color: rgba(76, 0, 252, 0.809);
+    color: white;
+}
