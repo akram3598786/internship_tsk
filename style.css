@@ -65,7 +65,7 @@
       margin-right: 90px;
     }
      #search_bar{
-    margin-left: -160px;
+    margin-left: -180px;
      
 }
   }
@@ -208,7 +208,7 @@ overflow-y: scroll;
 
 @media only screen and (max-width: 370px){
     .dashboard-p{
-        padding-top: 150px;     
+        padding-top: 120px;     
        
       }
       #menu_dropdown li{
