@@ -64,6 +64,10 @@
     .logo {
       margin-right: 90px;
     }
+     #search_bar{
+    margin-left: -160px;
+     
+}
   }
 
 @media only screen and (max-width: 350px){
